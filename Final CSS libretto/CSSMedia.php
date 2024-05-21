@@ -53,12 +53,12 @@ class CSSMedia{
     }
 
     public function getTemplate(){
-        if(!strpos($this->highTemplate, "}"))
-        throw new Exception("CSSMedia template is not finished. Call finish first.");
 
         return $this->highTemplate; 
     }
+
     public function getFormats(){
+        
         return $this->subFormats; 
     }
 }
